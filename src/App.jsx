@@ -6,6 +6,7 @@ function App() {
   return (
     <>
      
+          <button className="btn">Default</button>
           <h1 className='text-5xl'>Get started</h1>
         
     </>
