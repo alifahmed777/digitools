@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Create professional resumes easily with modern templates.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "50+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "https://i.ibb.co.com/Wvjzc9Sv/writing-2327400-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "Build a stunning personal portfolio website in minutes.",
+    "price": 40,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Responsive layouts",
+      "Custom domain",
+      "SEO friendly"
+    ],
+    "icon": "https://i.ibb.co.com/tMW9VHhX/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Manage and track all your job applications in one place.",
+    "price": 8,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Application tracking",
+      "Interview alerts",
+      "Notes management"
+    ],
+    "icon": "https://i.ibb.co.com/qM3kT00G/camera-8775444-1.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Generate personalized cover letters instantly.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "AI writing",
+      "Multiple formats",
+      "Easy editing"
+    ],
+    "icon": "https://i.ibb.co.com/ksLF3BBh/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Practice interviews with real questions and answers.",
+    "price": 20,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best",
+    "features": [
+      "Mock interviews",
+      "Answer tips",
+      "Video guidance"
+    ],
+    "icon": "https://i.ibb.co.com/Cp50r40k/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Upgrade your skills with curated learning resources.",
+    "price": 10,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Online courses",
+      "Progress tracking",
+      "Certificates"
+    ],
+    "icon": "https://i.ibb.co.com/0jKM7HnW/social-media.png"
+  }
+]

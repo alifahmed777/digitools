@@ -1,25 +1,41 @@
 import { FaUser } from 'react-icons/fa'
 import './App.css'
-import { toast, ToastContainer } from 'react-toastify'
+import { ToastContainer } from 'react-toastify'
+import ProductCards from './components/ProductCards/ProductCards';
+import { Suspense } from 'react';
+import NavBar from './components/NavBar/NavBar';
+import Banner from './components/Banner/Banner';
+
+const fetchData=async()=>{
+  const res=await fetch('/data.json');
+  return res.json();
+}
 
 function App() {
 
-  const ab=()=>{
-     toast("Wow so easy!")
-
-  } 
-
-  
-  ab();
-  
+  const productCardsJson=fetchData();
 
 
   return (
     <>
-    <FaUser></FaUser>
+
+    <NavBar></NavBar>
+
+    <Banner></Banner>
+
+
+
+
+
+
+    {/* <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
+       <ProductCards productCardsJson={productCardsJson}></ProductCards>
+    </Suspense> */}
+
+   
+   
      
-          <button className="btn">Default</button>
-          <h1 className='text-5xl'>Get started</h1>
+        
         
           
 
