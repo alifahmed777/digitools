@@ -7,7 +7,9 @@ function App() {
   const ab=()=>{
      toast("Wow so easy!")
 
-  }
+  } 
+
+  
   ab();
   
 
