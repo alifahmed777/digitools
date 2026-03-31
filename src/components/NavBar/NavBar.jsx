@@ -1,14 +1,14 @@
 import React from 'react';
 import { MdOutlineShoppingCart } from 'react-icons/md';
 
-const NavBar = () => {
+const NavBar = ({carts}) => {
     return (
         <div className='w-6/7 mx-auto'>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <h1 className='hover:cursor-pointer font-bold text-3xl text-transparent bg-clip-text bg-linear-to-r from-[#4F39F6] to-[#9514FA]'>DigiTools</h1>
                 </div>
-                <div className="navbar-center">
+                <div className="navbar-center hidden md:block">
                     <ul className='flex gap-3'>
                         <li><a href=''>Products</a></li>
                         <li><a href=''>Features</a></li>
@@ -24,7 +24,8 @@ const NavBar = () => {
                     <button className="btn btn-ghost btn-circle">
                         <div className="indicator">
                             <MdOutlineShoppingCart className='text-2xl'></MdOutlineShoppingCart>
-                            <span className="badge badge-xs badge-primary indicator-item">1</span>
+                            {carts.length===0?"":<span className="badge badge-xs badge-primary indicator-item">{carts.length}</span>
+}
                         </div>
                     </button>
                     <p><a href=''>Login</a></p>
