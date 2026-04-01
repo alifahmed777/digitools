@@ -14,11 +14,13 @@ const fetchData=async()=>{
   const res=await fetch('/data.json');
   return res.json();
 }
+    const productCardsJson=fetchData();
 
 function App() {
   const [carts,setCarts]=useState([]);
 
-  const productCardsJson=fetchData();
+
+
 
 
   return (
