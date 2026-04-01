@@ -3,17 +3,26 @@ import { toast } from 'react-toastify';
 
 const Carts = ({ carts,setCarts,total,setTotal}) => {
     const handleRemove=(cart)=>{
+       
         toast.warning("remove cart");
+        carts.map(crt=>{
+            if(crt.name===cart.name){
+                setTotal(prevTotal=>prevTotal-cart.price);
+            }
+        
+        })
+
+
         const filterCart=carts.filter(crt=>crt.name!=cart.name);
         setCarts(filterCart);
-        setTotal(total-cart.price);
+        // setTotal(total-cart.price);
 
     }
     return (
         <div className='space-y-2'>
-            {carts.map(cart => {
+            {carts.map((cart,index) => {
                 return (
-                    <div className='bg-[#F9FAFC] flex justify-between items-center p-4 rounded-xl'>
+                    <div key={index} className='bg-[#F9FAFC] flex justify-between items-center p-4 rounded-xl'>
                         <div className='flex'>
                             <div className='p-3 bg-white rounded-full'>
                                 <img src={cart.icon}></img>
